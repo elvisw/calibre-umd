@@ -95,15 +95,6 @@ class UMDInput(InputFormatPlugin):
                   chapterContent=chapterContent.replace(u'\u2029','\n');
                   first=True;
                   for line in chapterContent.split('\n'):
-                      if first and len(line) < 100:
-                          lineWithoutWhiteSpaces = re.sub(r'\s','',line);
-                          print "LINE: %s => %s" % (line,lineWithoutWhiteSpaces)
-                          if(len(lineWithoutWhiteSpaces) == 0):
-                              print "REMOVE"
-                              continue;
-                          if titleWithoutWhiteSpaces.find(lineWithoutWhiteSpaces) != -1:
-                              print "REMOVE"
-                              continue
                       first = False;
                       print "ADD %s" % line
                       line = line.rstrip();
