@@ -6,4 +6,4 @@ __docformat__ = 'restructuredtext en'
 '''
 Used for UMD input
 '''
-PLUGIN_VERSION=(1,0,2)
+PLUGIN_VERSION=(1,0,3)
