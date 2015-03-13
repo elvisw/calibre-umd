@@ -1,0 +1,1 @@
+Umd Plugin for Calibre
